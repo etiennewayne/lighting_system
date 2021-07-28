@@ -20,8 +20,10 @@ if(isset($_SESSION['user'])){
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/switchstyle.css">
 
-    <title>Door Lock</title>
+
+    <title>Lighting System</title>
 
     <style>
      
@@ -31,6 +33,19 @@ if(isset($_SESSION['user'])){
 
     <?php include_once 'includes/nav.php' ?>
 
+    <div class="container">
+        <h1>Toggle Switch</h1>
+
+        <label class="switch">
+            <input type="checkbox" id="togBtn">
+            <div class="slider round">
+            
+            <span class="on">ON</span>
+            <span class="off">OFF</span>
+            
+            </div>
+        </label>
+    </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/jquery-3.2.1.js"></script>

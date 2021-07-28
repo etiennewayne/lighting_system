@@ -12,7 +12,7 @@ class Connection{
         );
 
         try {
-            $conn = new PDO("mysql:host=$servername;dbname=doorlock", $username, $password, $options);
+            $conn = new PDO("mysql:host=$servername;dbname=lighting_system", $username, $password, $options);
             // set the PDO error mode to exception
             //$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION, );
             return $conn;
